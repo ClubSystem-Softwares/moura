@@ -48,7 +48,7 @@
                 "CSWeb\\Moura\\MouraServiceProvider"
             ],
             "aliases": {
-                "Moura": "CSWeb\\Moura\\MouraFacade"
+                "Moura": "CSWeb\\Moura\\Facades\\Moura"
             }
         }
     }

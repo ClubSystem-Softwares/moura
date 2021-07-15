@@ -1,12 +1,12 @@
 <?php
 
-namespace CSWeb\Moura;
+namespace CSWeb\Moura\Facades;
 
 use CSWeb\Moura\DTO\{Socio, Dependente};
 use Illuminate\Support\{Collection, Facades\Facade};
 
 /**
- * Class MouraFacade
+ * Moura
  *
  * @author  Matheus Lopes Santos <fale_com_lopez@hotmail.com>
  * @version 1.0.0
@@ -14,10 +14,10 @@ use Illuminate\Support\{Collection, Facades\Facade};
  * @method static Socio getSocio(string $cpf, string $password)
  * @method static Collection|Dependente[] getDependentes(string $cpf)
  */
-class MouraFacade extends Facade
+class Moura extends Facade
 {
     protected static function getFacadeAccessor(): string
     {
-        return Moura::class;
+        return \CSWeb\Moura\Moura::class;
     }
 }
